@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+    
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.white-text {
+color:#fff;
+}
+.clear {
+    clear:both;
+}
+.row {
+    float:left;
+}
+.row::after {
+    content:"";
+    display: block;
+    clear:both;
+}
+.col{ 
+    float:left;
+    padding:0 8px;
+    line-height: 1.5;
+}
+.colx2 {
+    width: 50%;
+}
+.col-full {
+width: 100%;
+}
+#pd-ft {
+    padding:64 16px;
+}
+#main {
+    overflow:hidden;
+}
+.pd16 {
+    padding:0px 16px;
+}
+.mgl-16{
+margin-left:-16px;
+}
+.threecol {
+    width: 33.3333%;
+
+}
+/* .threerow {
+    width: 100%;
+} */
+
+                                                  /* BEGIN HEADER */
+#header {
+    background-color: black;
+    color:#fff;
+    height: 46.5px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1;
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav li {
+    list-style-type: none;
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav .ti-angle-down {
+    font-size: 10px;
+}
+#nav > li > a {
+    color:#fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    padding: 0 24px;
+    line-height: 46.5px;
+    display: inline-block;
+}
+#nav li:hover .subnav {
+    display:block;
+}
+#nav .subnav {
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+#nav .subnav a {
+    color:#000;
+    padding: 0 24px 0 12px;
+    line-height: 38px;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #aaa;
+}
+#header .menu-btn,
+#header .search-bttn {
+    color:#fff;
+    float:right;
+    line-height: 46.5px;
+    padding: 0px 23px;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right:0;
+    
+}
+#header .search-bttn:hover {
+    background-color: #f44336;
+}
+#header .menu-btn:hover{
+    background-color: #aaa;
+}
+                                                         /* END HEADER */
+#slider {
+    margin-top: 46.5px;;
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/chicago.jpg) top center/ cover no-repeat;
+    position: relative;
+}
+#slider .text-content {
+    position: absolute;
+    bottom:48px;
+    color:#fff;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 100;
+    font-size: 23px;
+}
+#slider .text-des {
+    font-size: 15px;
+    margin-top:25px;
+}
+
+                              /* END SLIDER */
+
+#content {
+    min-height:1000px;
+  
+}
+#content .about-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 64px 0px;
+}
+#content .about-heading {
+    text-align: center;
+    font-weight: 400;
+    font-size:30px;
+    letter-spacing: 4px;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+#content .sub-heading {
+    margin: 15px 0px;
+    text-align: center;
+    opacity:0.6;
+    font-style:italic;
+}
+
+#content .about-text {
+    text-align: justify;
+    line-height:1.5;
+    font-size:15px;
+    margin:15px 16px;
+
+}
+                              /* MEMBER */
+#content .mem-list {
+    padding:32px 0px;
+}
+#content .member {
+    float:left;
+    text-align: center;
+}
+#content .mem-name {
+    margin:15px 0px;
+}
+#content .mem-avt {
+    margin-bottom: 16px;
+    width: 60%;
+    border-radius:4px;
+}
+                                   /* TOUR */
+
+.tour-section {
+    height: 868px;
+    background-color: #000;
+    
+}
+.tour-section li {
+    background-color: #fff;
+    border:#ccc solid 1px;
+    color:#757575 ;
+    list-style: none;
+    padding:9.5px 16px;
+}
+.tour-section ul {
+    margin-top:40px;
+}
+.sold-out {
+    background-color: #f44336;
+    color:#fff;
+    margin-left:16px;
+    padding:2px 8px;
+}
+.remaining {
+    float:right;
+    border-radius:50%;
+    text-align:center;
+    margin-right:16px;
+    background-color: #000;
+    color:#fff;
+    padding:2px 8px;
+    margin-top:-2px;
+}
+#content .tour-section .about-section {
+    width: 768px;
+    max-width: 100%;
+    padding-bottom: 34px;
+}
+.all-tour-items {
+    max-width: 800px;
+    margin:auto;
+}
+
+.places{
+    /* width: 768px; */
+    display:inline-block;
+    padding:0 8px;
+  
+
+}
+.places-item {
+    float:left;
+    display:block;
+    padding:0px 8px;
+}
+.places-body {
+    background-color: #fff;
+    padding:0 16px;
+    height:204px;
+    font-size:15px;
+    line-height: 1.5;
+}
+.places-img {
+    display: block;
+    width: 100%;
+}
+.places-name {
+    padding-top: 15px;
+    margin-bottom:15px;
+    font-weight:550;
+
+}
+.places-time {
+    margin:15px 0px;
+    opacity:0.6;
+}
+    
+.places-text {
+    margin-top:15px;
+    padding-bottom:20px;
+
+}
+
+.buy-tk-bttn {
+    margin-bottom:16px;
+    padding:8px 16px;
+    background-color: #000;
+    color:#fff;
+    line-height: 22.5px;
+    margin-top:-16px;
+    font-size: 15px;
+    border:none;
+
+}
+
+.buy-tk-bttn:hover {
+    background-color:#ccc;
+    color:#000;
+    cursor: pointer;
+}
+
+                           /* MODAL */
+.modal.open {
+    display:flex;
+}
+
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal-container {
+    background-color: #fff;
+    position: relative;
+    max-width: 900px;
+    width: calc(100% - 32px);
+    height: 472px;
+    animation: modalAni ease 0.5s;
+
+}
+.modal-close-bttn {
+    position:absolute;
+    color:#fff;
+    right:0;
+    padding:12px;
+}
+
+.modal-close-bttn:hover {
+    color:#000;
+}
+.modal-head {
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    letter-spacing: 4px;
+    color:#fff;
+}
+.modal-bag {
+    margin-right:16px
+}
+.modal-body{
+    padding:0 16px;
+    line-height: 22.5px;
+
+}
+.modal-label{
+    display: block;
+    margin:15px 0px;
+    font-size:15px;
+    
+}
+.modal-input {
+    padding:8px;
+    border:1px solid #ccc;
+    width: 100%;
+}
+.modal-pay {
+    padding:16px;
+    width: 100%;
+    background-color: #009688;
+    color:#fff;
+    text-align: center;
+    border:none;
+    margin:16px 0px;
+    line-height: 22.5px;
+}
+.modal-pay:hover {
+    background-color: #ccc;
+    color:#000;
+}
+.modal-help {
+    float:right;
+    margin:15px 0px;
+}
+.help-text{
+    color:#2196F3;
+    text-decoration: underline;
+}
+
+                                           /* JAVA SCRIPT MODAL */
+@keyframes modalAni {
+    from{
+        transform: translateY(-150px);
+        opacity:0.5;
+
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+
+    }
+}
+
+                                                /* CONTACT */
+#content .contact .about-section {
+    height: 460px;
+}
+.contact .contact-info {
+    margin-top:32px;
+}
+.contact-text-info {
+    font-size:18px;
+}
+.contact .contact-form {
+    font-size:15px;
+}
+.contact-icon {
+    width: 30px;
+    display: inline-block;
+}
+.contact-input {
+    padding:8px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    line-height: 22.5px;
+}
+.col .contact-input {
+    width: 184px;
+}
+.col-full.contact-input {
+    width: 384px;
+    margin-top:8px;
+}
+
+.contact-inputcontainer{
+    padding:0 8px;
+}
+.contact-form .contact-submit-btn {
+    float:right;
+    margin-top:16px;
+    margin-right:8px;
+    border:none;
+    border-radius: 0px;
+}
+                                           /* END CONTACT */
+.map-img {
+    width: 100%;
+}
+                                           /* FOOTER */
+#main #footer {
+    padding:64px 16px;
+    text-align: center;
+    display:block;
+    
+    
+
+}
+#footer .socials a{
+    color: #757575;
+    font-size:24px;
+    text-decoration: none;
+    text-decoration-color: #757575;
+}
+
+#footer .socials a:hover {
+    color:#aaa;
+    cursor:auto;
+
+}
+#footer .footer-text {
+    text-decoration: none;
+    text-decoration-color: #000;
+    margin:15px 0px;
+    color:#757575;
+}
+#footer .footer-link {
+    text-decoration: underline;
+    color:#757575;
+}
+#footer .footer-link:hover {
+    cursor: pointer;
+}
